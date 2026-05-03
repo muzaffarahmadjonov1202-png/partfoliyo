@@ -11,7 +11,7 @@ body {
   color: #ededed;
 }
 
-/* HEADER */
+
 .header {
   position: fixed;
   width: 100%;
@@ -27,7 +27,9 @@ body {
 }
 
 .logo {
-  color: #0ef;
+  color: rgb(255, 153, 0);
+  width: 150px;
+  height: 100px;
 }
 
 .navbar a {
@@ -42,7 +44,7 @@ body {
   color: rgb(255, 153, 0);
 }
 
-/* HOME */
+
 .home {
   height: 100vh;
   display: flex;
@@ -104,14 +106,12 @@ body {
   box-shadow: 0 0 20px rgb(255, 153, 0);
 }
 
-/* IMAGE */
 .img {
   width: 300px;
   border-radius: 20px;
   box-shadow: 0 0 30px rgb(255, 153, 0);
 }
 
-/* ABOUT */
 .about {
   display: flex;
   align-items: center;
@@ -119,7 +119,7 @@ body {
   padding: 80px 10%;
 }
 
-.about-img1 {
+.about img {
   width: 250px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgb(255, 153, 0);
@@ -137,7 +137,6 @@ body {
   margin-top: 10px;
 }
 
-/* TITLES */
 .sub-title {
   text-align: center;
   font-size: 40px;
@@ -148,7 +147,6 @@ body {
   color: rgb(255, 153, 0);
 }
 
-/* SKILLS */
 .container {
   display: flex;
   justify-content: space-around;
@@ -179,42 +177,52 @@ body {
   width: 80%;
 }
 
-.progress-line.javascript span {
-  width: 70%;
-}
-
-/* PORTFOLIO */
 .portfolio1 {
-  padding: 50px 10%;
+  padding: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-content {
-  display: inline-block;
-  margin: 15px;
+  display:flex;
+  gap: 20px;
 }
 
 .card {
+  width: 370px;
+  height: 200px;
   background: #112e42;
-  padding: 15px;
   border-radius: 15px;
-  transition: 0.3s;
+  padding: 20px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgb(255, 153, 0);
+.f1{ 
+  animation:float 3s infinite;
+}
+
+.f2{
+  animation:float 3s infinite 1s;
+}
+
+.f3{
+  animation:float 3s infinite 2s;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform: translateY(-20px);}
 }
 
 .card img {
-  width: 200px;
+  width: 330px;
   border-radius: 10px;
+  
 }
 
 .heading2 {
   margin: 10px 0;
 }
 
-/* TESTIMONIALS */
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -239,4 +247,63 @@ body {
 .testimonials-item img {
   width: 100px;
   border-radius: 50%;
+}
+
+
+.contact {
+  padding: 50px 10%;
+}
+
+.input-box input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  background: rgb(255, 153, 0);
+  color: #081b29;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px rgb(255, 153, 0);
+}
+
+.html{
+  justify-content: center;
+  align-items: center;
+  right: 500px;
+}
+
+.card {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 153, 0);
+}
+.div{
+  display: flex;
+  gap: 120px;
+  padding-top: 90px;
+}
+
+#toggle-them{
+  display: none;
+}
+
+
+#toggle-them:checked ~ .them{
+  background-color: darkcyan;
+}
+
+.them{
+  transition: 0,3s;
 }

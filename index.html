@@ -10,9 +10,15 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./m.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Muzaffar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
+
+    <input type="checkbox" id="toggle-them">
+
     <header class="header">
       <a href="#" class="logo">
         <img src="./ChatGPT Image 28 мар. 2026 г., 13_53_45.png" alt="" width="150px" height="100px">
@@ -21,10 +27,15 @@
         <a href="#" style="--i: 1" class="active">Bosh sahifa</a>
         <a href="#about" style="--i: 2">Men haqimda</a>
         <a href="#oilam" style="--i: 2">Oilam</a>
+        <a href="#portfolioID" style="--i: 4">Loyihalarim</a>
         <a href="#meninGuruhim" style="--i: 5">Mening guruhim</a>
       </nav>
-    </header>
 
+      <label for="toggle-them">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </label>
+    </header>
+  <main class="them">
     <section class="home">
       <div class="home-content">
         <div class="men">
@@ -35,7 +46,7 @@
           </p>
           <div class="home-sci">
             <a href="#" style="--i: 8"><i class="bx bxl-instagram"></i></a>
-            <a href="tel:+998930013321" style="--i: 9"><i class='bx bxs-phone-call'></i></a>
+            <a href="tel:+998939280680" style="--i: 9"><i class='bx bxs-phone-call'></i></a>
             <a href="https://t.me/muzaffur" style="--i: 10"><i class="bx bxl-telegram"></i></a>
           </div>
           <a href="#about" class="btn-box">Men haqimda</a>
@@ -46,7 +57,7 @@
     </section>
     <div id="menin-o-con">
       <h3 class="sub-title" id="oilam">Mening <span>Oilam</span></h3>
-      <section class="about about-me" id="about">
+      <section class="about about-me" id="about" data-aos="fade-right">
         <div class="about-img">
           <img class="about-img1" src="./men.jpg" alt="" />
         </div>
@@ -61,7 +72,7 @@
         </div>
       </section>
 
-      <section class="about" id="menin-o">
+      <section class="about" id="menin-o" data-aos="fade-left">
         <!-- menin oilam onam -->
         <div class="about-text">
           <h2>Bu mening <span>Onajonim</span></h2>
@@ -77,7 +88,7 @@
           </div>
       </section>
       <!-- menin oilam adam -->
-      <section class="about" id="about">
+      <section class="about" id="about" data-aos="fade-right">
         <div class="about-img">
           <img
             class="about-img1"
@@ -98,20 +109,174 @@
       </section>
       
       <!-- opam -->
-      <section class="about" id="about">
-        <div class="about-img">
-          <img class="about-img1"src="./opam.jpg"alt=""
-          />
-        </div>
+     <section class="about" id="menin-o" data-aos="fade-left">
+        <!-- menin oilam onam -->
         <div class="about-text">
           <h2>Bu mening <span>Opam</span></h2>
           <h4></h4>
           <p>
            Opam menga qiynalganimda og'irimni yengil qiladilar. Hech kimga ayta olmagan gaplarimni 
            mehribonim opamga aytaman. Men ular bilan faxirlanaman.
-          </p>
+          </p> 
         </div>
+          <div class="about-img">
+            <img class="about-img1" src="./opam.jpg" alt="">
+          </div>
       </section>
+      
+      <section id="portfolioID" class="portfolio1">
+      <div id="portfolio" id="project">
+        <div class="main-text">
+          <h2 class="html">HTML <span>Loyihalarim</span></h2>
+          <div class="div">
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./loyha1.png" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_9_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f3">
+                <img class="card-img" src="./photo_11_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="div">
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./photo_12_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_13_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f3">
+                <img class="card-img" src="./photo_14_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div">
+
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./photo_15_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_16_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f3">
+                <img class="card-img" src="./photo_17_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+
+
+
+
+        <div class="main-text">
+          <h2 class="headi">CSS <span>Loyihalarim</span></h2>
+          <div class="div">
+
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./Снимок экрана 2026-04-04 135217.png" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_3_2026-04-04_14-53-17.jpg" alt=""/>
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f3">
+                <img class="card-img" src="./photo_2_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div">
+
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./photo_4_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_5_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+           <div class="portfolio-content">
+              <div class="card f3">
+                <img class="card-img" src="./photo_23_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="div">
+
+            <div class="portfolio-content">
+              <div class="card f1">
+                <img class="card-img" src="./photo_6_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+
+            <div class="portfolio-content">
+              <div class="card f2">
+                <img class="card-img" src="./photo_8_2026-04-04_14-53-17.jpg" alt="" />
+                <p class="heading2"></p>
+              </div>
+            </div>
+        
+              <div class="portfolio-content">
+                <div class="card f3">
+                  <img class="card-img" src="./photo_1_2026-04-04_14-53-17.jpg" alt="" />
+                  <p class="heading2"></p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+    </section>
       
           <!-- mening guruhim -->
                <section class="testimonials" id="testimonials">
@@ -124,7 +289,7 @@
             <br><br><br><br><br><br>
             <div class="wrapper">
                 <div class="testimonials-item">
-                    <img src="./usozim nurim.jpg" alt="">
+                    <img src="./ustozim.JPG" alt="">
                     <h2 class="h21">Ustozim</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
@@ -137,7 +302,7 @@
                 </div>
 
                 <div class="testimonials-item">
-                    <img src="./afzalxon.png.jpg" alt="">
+                    <img src="./afzal.JPG" alt="">
                     <h2 class="h21">Afzalxon</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
@@ -151,7 +316,7 @@
                 </div>
 
                  <div class="testimonials-item">
-                    <img src="./elnur.jpg" alt="">
+                    <img src="./elnur.JPG" alt="">
                     <h2 class="h21">Elnur</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
@@ -165,7 +330,7 @@
                 </div>
 
                 <div class="testimonials-item">
-                    <img src="./abdulbosit.JPG" alt="">
+                    <img src="./abu.JPG" alt="">
                     <h2 class="h21">Abdulbosit</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
@@ -181,7 +346,7 @@
                
 
                 <div class="testimonials-item">
-                    <img src="./rustam.jpg" alt="">
+                    <img src="./rusyam.JPG" alt="">
                     <h2 class="h21">Rustam</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
@@ -195,8 +360,8 @@
                 </div>
 
                 <div class="testimonials-item">
-                    <img src="./mahmud.jpg" alt="">
-                    <h2 class="h21">Mahmud</h2>
+                    <img src="./mahmud.JPG" alt="">
+                    <h2 class="h21">Mahmudjon</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
                         <i class="'bx bxs-star'" id="star"></i>
@@ -208,7 +373,7 @@
                     
                 </div>
 
-                <!-- Ilyos -->
+                
                 <div class="testimonials-item">
                     <img src="./malik.jpg" alt="">
                     <h2 class="h21">Abdumalik</h2>
@@ -223,10 +388,10 @@
                     
                 </div>
 
-                <!-- Mustafo  -->
+                
                 <div class="testimonials-item">
-                    <img src="" alt="">
-                    <h2 class="h21"></h2>
+                    <img src="./qayum.JPG" alt="">
+                    <h2 class="h21">Abduqayum</h2>
                     <div class="rating">
                         <i class="'bx bxs-star'" id="star"></i>
                         <i class="'bx bxs-star'" id="star"></i>
@@ -238,12 +403,40 @@
                     
                 </div>
 
-                <!-- Axmad  -->
+                
                 <div class="testimonials-item">
-                    <img src="" alt="">
-                    <h2 class="h21"></h2>
+                    <img src="./hoji.JPG" alt="">
+                  <h2 class="h21">Hojiakbar</h2>
                   
                     
+                    
+                </div>
+
+                <div class="testimonials-item">
+                    <img src="./abduloh.JPG" alt="">
+                    <h2 class="h21">Abduloh</h2>
+                    <div class="rating">
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="testimonials-item">
+                    <img src="./abubakir.JPG" alt="">
+                    <h2 class="h21">abubakir</h2>
+                    <div class="rating">
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                        <i class="'bx bxs-star'" id="star"></i>
+                    </div>
+                   
                     
                 </div>
 
@@ -251,7 +444,12 @@
         </div>
     </div>
     </section>
+    </main>
 
-          
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>  
+
   </body>
 </html>
